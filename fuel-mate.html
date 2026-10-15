@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel-Mate | Smart Ride Sharing</title>
+    <link rel="stylesheet" href="/fuel-mate.css">
+    <script src="/fuel-mate.js" defer></script>
+</head>
+<body>
+    <main class="app-container">
+        <header>
+            <img
+                src="https://i.ibb.co/CK5xFBs/1730746923591.jpg"
+                alt="Fuel-Mate Logo"
+                class="logo"
+            >
+            <h1>Share Your Ride</h1>
+            <p>Share the journey. Split the fuel. Save more.</p>
+        </header>
+
+        <section class="input-section">
+            <h2>Post Your Trip</h2>
+            <p>Save your trip so other travelers can discover it.</p>
+
+            <form id="rideForm">
+                <label for="travelerName">Your Name</label>
+                <input
+                    type="text"
+                    id="travelerName"
+                    maxlength="80"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="location">Destination</label>
+                <input
+                    type="text"
+                    id="location"
+                    maxlength="120"
+                    placeholder="e.g. Bhadravati"
+                    required
+                >
+
+                <label for="distance">Distance (km)</label>
+                <input
+                    type="number"
+                    id="distance"
+                    min="1"
+                    max="10000"
+                    step="any"
+                    placeholder="Enter distance"
+                    required
+                >
+
+                <label for="passengers">Number of Travelers</label>
+                <input
+                    type="number"
+                    id="passengers"
+                    min="1"
+                    max="50"
+                    value="1"
+                    required
+                >
+
+                <button type="submit">Post Trip</button>
+            </form>
+
+            <p id="postStatus" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="input-section search-section">
+            <h2>Find Travel Partners</h2>
+            <p>Search for other trips going to the same destination.</p>
+
+            <form id="searchForm">
+                <label for="searchDestination">Search Destination</label>
+                <input
+                    type="text"
+                    id="searchDestination"
+                    placeholder="Enter destination"
+                    required
+                >
+                <button type="submit">Find Matches</button>
+            </form>
+
+            <p id="searchStatus" role="status" aria-live="polite"></p>
+
+            <div id="matches-section" hidden>
+                <h2>Matching Trips</h2>
+                <div id="matches"></div>
+            </div>
+        </section>
+
+        <section class="input-section estimate-section">
+            <h2>Fuel Cost Estimator</h2>
+            <p>Estimate the cost of your journey using example assumptions.</p>
+
+            <label for="mileage">Vehicle Mileage (km/litre)</label>
+            <input
+                type="number"
+                id="mileage"
+                min="1"
+                max="200"
+                step="any"
+                value="15"
+            >
+
+            <label for="fuelPrice">Fuel Price (₹/litre)</label>
+            <input
+                type="number"
+                id="fuelPrice"
+                min="0.01"
+                step="any"
+                value="105"
+            >
+
+            <button type="button" id="estimateButton">
+                Calculate Fuel Cost
+            </button>
+
+            <div id="estimateResult" aria-live="polite"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Fuel-Mate. Share journeys, not personal data.</p>
+        </footer>
+    </main>
+</body>
+</html>

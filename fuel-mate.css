@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://i.ibb.co/M23TFtg/347423c9-9176-4975-9943-6ff6f52d1b7d-1.webp') no-repeat center center fixed; /* Add a background image */
+    background-size: cover;
+}
+
+.app-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#matches-section {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Fuel-Mate responsive layout improvements */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 32px 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 760px;
+    min-width: 0;
+    margin: 24px auto;
+    padding: 32px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.91);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 16px;
+}
+
+header h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    margin: 12px 0;
+}
+
+.input-section {
+    margin: 24px 0;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.78);
+    text-align: left;
+}
+
+.input-section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.input-section > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+form label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: 600;
+}
+
+form input,
+.input-section > input {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+    font: inherit;
+}
+
+form input:focus,
+.input-section > input:focus {
+    outline: 2px solid #24a148;
+    outline-offset: 2px;
+}
+
+button {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 18px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #24a148;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #188038;
+    transform: translateY(-1px);
+}
+
+.match-item {
+    margin-top: 16px;
+    padding: 18px;
+    border: 1px solid #d6e7d9;
+    border-radius: 10px;
+    background: #f6fbf6;
+    overflow-wrap: anywhere;
+}
+
+.match-item h3 {
+    margin-top: 0;
+}
+
+.error {
+    color: #b42318;
+}
+
+footer {
+    padding: 16px 0 4px;
+    color: #475569;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .app-container {
+        margin: 8px auto;
+        padding: 18px;
+    }
+
+    .input-section {
+        padding: 16px;
+        margin: 16px 0;
+    }
+
+    .logo {
+        width: 72px;
+        height: 72px;
+    }
+}
