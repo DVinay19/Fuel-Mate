@@ -157,7 +157,7 @@ Make sure the following are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Fuel-Mate.git
+git clone https://github.com/DVinay19/Fuel-Mate.git
 ```
 
 ### 2. Navigate to the Project Directory
@@ -275,5 +275,5 @@ No open-source license has been specified yet. A license can be added if the pro
 </p>
 
 <p align="center">
-  <a href="https://github.com/YOUR-USERNAME/Fuel-Mate">GitHub Repository</a>
+  <a href="https://github.com/DVinay19/Fuel-Mate">GitHub Repository</a>
 </p>
